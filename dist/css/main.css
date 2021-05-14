@@ -1,0 +1,760 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #161616;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  */
+#mainSec {
+  padding: 30px 50px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: 1330px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #edf1fd;
+  background-image: url("/images/cover.png");
+}
+
+/* Navbar Design  Start --->  */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 2px;
+  font-family: Calibri;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 50px;
+  background-color: #F4F7FF;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .menu li a {
+  padding: 10px 15px;
+  color: #6c707c;
+  font-size: 14px;
+  margin: 0 2px;
+}
+
+nav .menu li a:hover {
+  background-color: #292929;
+  color: #fff !important;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.active a {
+  background-color: #292929;
+  color: #fff !important;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.logo {
+  font-size: 25px;
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #292929;
+}
+
+.toggle {
+  display: none;
+}
+
+/* End <--- */
+/* Content Section Design Start ---> */
+.myName {
+  font-family: calibri;
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+}
+
+.myName p:nth-child(1), .myName .secDetail {
+  color: #6c707c;
+  font-size: 16px;
+}
+
+.myName h1 {
+  font-family: 'Poppins';
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #292929;
+}
+
+.myName .firstName {
+  color: #17d1ac;
+}
+
+.cv-btn {
+  width: 200px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #292929;
+  color: #fff;
+}
+
+.cv-btn:hover {
+  background-color: #131313;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.downArrow {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 50%;
+  height: 15%;
+  margin-bottom: 4em;
+  position: absolute;
+  bottom: 0px;
+  left: -3%;
+  border-right: 1px solid rgba(41, 41, 41, 0.3);
+}
+
+.downArrow::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 11px 0 11px;
+  border-color: #292929 transparent transparent transparent;
+  right: -.7em;
+  bottom: -2px;
+}
+
+.socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.socialLinks a {
+  margin: 6px 12px;
+}
+
+.socialLinks i {
+  color: rgba(18, 17, 17, 0.4);
+  font-size: 14px;
+}
+
+.socialLinks a:hover i {
+  color: #17d1ac;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* End <--- */
+/* About Me Design Start ---> */
+#aboutMe {
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 5% 0px 5%;
+}
+
+.aboutContainer {
+  font-family: calibri;
+  width: 50%;
+}
+
+.aboutContainer h1 {
+  font-size: 5rem;
+  color: #17d1ac;
+}
+
+.aboutContainer h2 {
+  font-size: 3rem;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.aboutContainer h1, .aboutContainer h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.aboutContainer p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.aboutContainer button {
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #17d1ac;
+}
+
+.aboutContainer button:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #161616;
+}
+
+/* End <--- */
+/* Services Design */
+#services {
+  width: 100%;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: calibri;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+}
+
+.service_heading {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.service_heading h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.service_heading p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+  margin: 0px;
+  padding: 0px;
+}
+
+.service_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.service_container .box_container {
+  position: relative;
+  background-color: #2B2B2B;
+  width: 350px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service_container .box_container .box_image_container {
+  width: 100%;
+  height: 70%;
+}
+
+.service_container .box_container .box_image_container .service_type {
+  font-family: calibri;
+  color: #fff;
+  background-color: #151515;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+  -webkit-box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service_container .box_container .box_image_container img {
+  height: 100%;
+  width: 100%;
+}
+
+.service_container .box_container .box_text {
+  width: 100%;
+  height: 30%;
+  background-color: #1E1E1E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.service_container .box_container .box_text a {
+  color: #fff;
+  margin: 0px;
+  font-size: 1.1rem;
+  font-family: calibri;
+  display: block;
+  display: -webkit-box;
+  max-width: 80%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.service_container .box_container .box_text a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.service_container .box_container:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+/* End <--- */
+/* My Works Design */
+#myWorks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 60px 2% 20px 2%;
+}
+
+#myWorks .headline {
+  font-family: calibri;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #fff;
+  background-color: #292929;
+  font-weight: 400;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#myWorks .work_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-gap: 10px;
+  width: 90%;
+  height: 70vh;
+}
+
+#myWorks .work_container .work_box {
+  position: relative;
+  background-color: #1F1F1F;
+  -webkit-box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#myWorks .work_container .work_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#myWorks .work_container .work_box .overlay_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(162, 153, 201, 0.8);
+  font-family: calibri;
+  display: none;
+}
+
+#myWorks .work_container .work_box .overlay_text h1 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#myWorks .work_container .work_box .overlay_text p {
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+#myWorks .work_container .work_box .overlay_text h1, #myWorks .work_container .work_box .overlay_text p {
+  color: #fff;
+}
+
+#myWorks .work_container .work_box:hover .overlay_text {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* End <--- */
+/* Contact Me Design */
+#contact {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #F4F7FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+#contact .heading {
+  margin: 10px;
+  padding: 5px;
+  font-size: 2rem;
+  font-family: calibri;
+  letter-spacing: 4px;
+  color: #1E1E1E;
+  border-bottom: 2px solid #1E1E1E;
+}
+
+#contact button {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  font-family: calibri;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #1E1E1E;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+#contact button:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #17d1ac;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* End <--- */
+/* Contact Form Design */
+#contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+#contact_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: 60vh;
+  background-color: #1A1A1A;
+  -webkit-box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+#contact_form form .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  height: 100%;
+}
+
+#contact_form form .left_side h {
+  font-family: calibri;
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#contact_form form .left_side .name, #contact_form form .left_side .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size-adjust: calibri;
+}
+
+#contact_form form .left_side .name p, #contact_form form .left_side .email p {
+  font-size: 22px;
+  color: #BFBFBF;
+}
+
+#contact_form form .left_side .name input, #contact_form form .left_side .email input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #929292;
+  color: #FFFFFF;
+  margin: 10px 0px;
+}
+
+#contact_form form .left_side .name input::-webkit-input-placeholder, #contact_form form .left_side .email input::-webkit-input-placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+#contact_form form .left_side .name input:-ms-input-placeholder, #contact_form form .left_side .email input:-ms-input-placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+#contact_form form .left_side .name input::-ms-input-placeholder, #contact_form form .left_side .email input::-ms-input-placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+#contact_form form .left_side .name input::placeholder, #contact_form form .left_side .email input::placeholder {
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+#contact_form form .left_side .name input:focus, #contact_form form .left_side .email input:focus {
+  border-bottom: 1px solid #17d1ac;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#contact_form form .right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 60%;
+  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#contact_form form .right_side .message {
+  margin: 20px;
+}
+
+#contact_form form .right_side .message p {
+  font-family: calibri;
+  font-size: 18px;
+  color: #4E4E4E;
+}
+
+#contact_form form .right_side .message textarea {
+  width: 100% !important;
+  height: 320px !important;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #EBEBEB;
+  font-size: 16px;
+}
+
+#contact_form form .right_side .message textarea::-webkit-input-placeholder {
+  color: #EBEBEB;
+  font-family: calibri;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#contact_form form .right_side .message textarea:-ms-input-placeholder {
+  color: #EBEBEB;
+  font-family: calibri;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#contact_form form .right_side .message textarea::-ms-input-placeholder {
+  color: #EBEBEB;
+  font-family: calibri;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#contact_form form .right_side .message textarea::placeholder {
+  color: #EBEBEB;
+  font-family: calibri;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#contact_form form .right_side button {
+  width: 100%;
+  height: 50px;
+  background-color: #1ED98B;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  margin: 0px;
+  color: #1B1B1B;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#contact_form form .right_side button:active {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+}
+/*# sourceMappingURL=main.css.map */
