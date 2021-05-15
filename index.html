@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/main.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="/dist/js/JQuery3.6.0.js"></script>
     <title>Mehedi Hassan</title>
 </head>
 <body>
@@ -16,34 +17,34 @@
 
     <section id="mainSec">
         <nav>
-        <a href="#" class="logo">Portfolio</a>
-        <div class="toggle"></div>
-        <ul class="menu">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">My Works</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li class="active"><a href="#mainSec">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#myWorks">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <!-- Presenting Me -->
+        <!-- Presenting Me -->
 
-    <div class="myName">
-        <p>Hello</p>
-        <h1>I'm <span class="firstName">Mehedi</span> Hassan</h1>
-        <p class="secDetail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maiores eveniet eligendi dolorem quidem ullam possimus sequi, veniam vitae dicta.</p>
-        <a href="#" class="cv-btn">Download Cv</a>
-    </div>
+        <div class="myName">
+            <p>Hello</p>
+            <h1>I'm <span class="firstName">Mehedi</span> Hassan</h1>
+            <p class="secDetail">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo maiores eveniet eligendi dolorem quidem ullam possimus sequi, veniam vitae dicta.</p>
+            <a href="/cv/Mehedi Hassan.pdf" class="cv-btn" download>Download Cv</a>
+        </div>
 
-    <div class="downArrow"></div>
+        <div class="downArrow"></div>
 
-    <div class="socialLinks">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>	
-	    <a href="#"><i class="fab fa-twitter"></i></a>
-	    <a href="#"><i class="fab fa-instagram"></i></a>
-	    <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/howlader.mehedi.hassan/" target="_blank"><i class="fab fa-facebook-f"></i></a>	
+	        <a href="https://twitter.com/Mehedi_HH" target="_blank"><i class="fab fa-twitter"></i></a>
+	        <a href="https://github.com/hassan-mehedi" target="_blank"><i class="fab fa-github"></i></a>
+	        <a href="https://www.linkedin.com/in/howlader-mehedi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </section>
 
     <!---------- About Me Section ---------->
@@ -106,27 +107,33 @@
         <p class="headline">My Works</p>
         <div class="work_container">
             <div class="work_box">
-                <div class="overlay_text">
-                    <h1>Chat Application</h1>
-                    <p>My Project</p>
-                </div>
-                <img src="/images/chat-app.png" alt="Chat App">
+                <a href="https://chat-application-mehedi.netlify.app" target="_blank">
+                    <div class="overlay_text">
+                        <h1>Chat Application</h1>
+                        <p>My Project</p>
+                    </div>
+                    <img src="/images/chat-app.png" alt="Chat App">
+                </a>
             </div>
 
             <div class="work_box">
-                <div class="overlay_text">
-                    <h1>Tic-Tac-Toe Game</h1>
-                    <p>My Project</p>
-                </div>
-                <img src="/images/tic-tac-toe.png" alt="Tic-Tac-Toe Game">
+                <a href="https://tic-tac-toe-z.netlify.app" target="_blank">
+                    <div class="overlay_text">
+                        <h1>Tic-Tac-Toe Game</h1>
+                        <p>My Project</p>
+                    </div>
+                    <img src="/images/tic-tac-toe.png" alt="Tic-Tac-Toe Game">
+                </a>
             </div>
 
             <div class="work_box">
-                <div class="overlay_text">
-                    <h1>Time Countdown</h1>
-                    <p>My Project</p>
-                </div>
-                <img src="/images/eid-ul-adha.png" alt="Time Countdown">
+                <a href="https://eid-ul-adha.netlify.app" target="_blank">
+                    <div class="overlay_text">
+                        <h1>Time Countdown</h1>
+                        <p>My Project</p>
+                    </div>
+                    <img src="/images/eid-ul-adha.png" alt="Time Countdown">
+                </a>
             </div>
         </div>
     </section>
@@ -135,22 +142,24 @@
 
     <section id="contact">
         <h1 class="heading">Want to know more?</h1>
-        <button>Contact Me</button>
+        <a href="#contact_form">
+            <button>Contact Me</button>
+        </a>
     </section>
 
     <!---------- Contact Form ---------->
 
     <section id="contact_form">
-        <form action="">
+        <form action="/dist/php/sendMail.php" method="POST" enctype="multipart/form-data">
             <div class="left_side">
-                <h1 class="left_heading"><span style="border-bottom: 3px solid #1ED98B;">Writ</span>e us</h1>
+                <h1 class="left_heading"><span style="border-bottom: 3px solid #1ED98B;">Emai</span>l me</h1>
                 <div class="name">
                     <p>Name</p>
-                    <input type="text" placeholder="Full Name">
+                    <input name="name" type="text" placeholder="Full Name" required>
                 </div>
                 <div class="email">
                     <p>Email</p>
-                    <input type="email" placeholder="abc@gmail.com">
+                    <input name="email" type="email" placeholder="abc@gmail.com" required>
                 </div>
             </div>
 
@@ -159,10 +168,20 @@
                     <p>Your Message</p>
                     <textarea name="message" cols="20" rows="5" placeholder="Write your message..."></textarea>
                 </div>
-                <button>Submit</button>
+                <input type="submit" value="Submit" id="submitButton">
             </div>
         </form>
     </section>
+
+	<script type="text/javascript">
+		/*Responsive Navigation*/
+	    $(document).ready(function(){
+	        $('.toggle').click(function(){
+		        $('.toggle').toggleClass('active')
+		        $('nav ul').toggleClass('active-menu')
+		    })
+        });
+	</script>
 
 </body>
 </html>
