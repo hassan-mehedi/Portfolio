@@ -150,7 +150,12 @@
     <!---------- Contact Form ---------->
 
     <section id="contact_form">
-        <form action="sendMail.php" method="POST" enctype="multipart/form-data">
+	<?php
+	$action=$_REQUEST['action'];
+	if ($action=="")    /* display the contact form */
+    	{
+    	?>
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="left_side">
                 <h1 class="left_heading"><span style="border-bottom: 3px solid #1ED98B;">Emai</span>l me</h1>
                 <div class="name">
@@ -171,6 +176,19 @@
                 <input type="submit" value="Submit" id="submitButton">
             </div>
         </form>
+	<?php
+    	}
+	else                /* send the submitted data */
+    	{
+    		$name=$_REQUEST['name'];
+    		$email=$_REQUEST['email'];
+    		$message=$_REQUEST['message'];
+    		
+       		$from="From: $name<$email>\r\nReturn-path: $email";
+        	$subject="Message sent using your contact form";
+        	mail("howlader.mehedihassan@gmail.com", $subject, $message, $from);
+    	}  
+?>
     </section>
 
 	<script type="text/javascript">
